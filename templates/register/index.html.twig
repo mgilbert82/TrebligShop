@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+
+	<h1>Inscription</h1>
+
+	{{ form(form) }}
+		<p>Vous avez déjà un compte ?
+			<a href="/connexion" class="text-link">Je me connecte</a>
+		</p>
+	{% endblock %}
