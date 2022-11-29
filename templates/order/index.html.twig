@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Valider ma commande | Trebligshop
+{% endblock %}
+
+{% block content %}
+	<h1>Je passe ma commande</h1>
+	<p>Dernière ligne droite avant de se jeter à l'eau</p>
+	<hr>
+	<div class="row pb-5">
+		<div class="col-md-6">
+			{% set formHtml %}
+			{{ form(form)}}
+				{% endset %}
+				{{ formHtml|replace({'[br]' : '<br/>'})|raw}}
+				<b>Choisir mon mode de livraison</b><br>
+			</div>
+			<div class="col-md-6">
+				<b>Récapitulatif de ma commande</b><br>
+				<a href="{{path('app_order')}}" class="btn btn-info">Payer ma commande</a><br>
+			</div>
+		</div>
+	{% endblock %}

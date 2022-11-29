@@ -55,3 +55,7 @@ body {
 .product-page-price {
     font-size: 19px;
 }
+
+.block-small {
+    max-width: 600px;
+}
