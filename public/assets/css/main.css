@@ -59,3 +59,20 @@ body {
 .block-small {
     max-width: 600px;
 }
+
+.form-check {
+    background-color: #F4F8FF;
+    padding: 20px 65px;
+    margin-top: 8px;
+}
+
+.col-form-label {
+    font-size: large;
+    font-weight: 400;
+}
+
+.order-summary {
+    background-color: #F4F8FF;
+    padding: 20px;
+    margin-top: 22px;
+}

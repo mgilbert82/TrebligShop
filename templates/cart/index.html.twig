@@ -41,8 +41,8 @@
 								<i class="bi bi-plus-circle-fill"></i>
 							</a>
 						</td>
-						<td>{{ (product.product.price/100)|number_format(2, ",")}}€</td>
-						<td>{{ ((product.product.price*product.quantity)/100)|number_format(2, ",")}}€</td>
+						<td>{{ (product.product.price/100)|number_format(2, ",", " ")}}€</td>
+						<td>{{ ((product.product.price*product.quantity)/100)|number_format(2, ",", " ")}}€</td>
 						<td>
 							<a href="{{ path('app_delete_my_cart', {'id': product.product.id }) }}" class="btn btn-danger">
 								<i class="bi bi-trash"></i>
@@ -60,7 +60,7 @@
 			{{ cart|length }}
 		</b><br>
 		<b>Total de mon panier:
-			{{ (total/100)|number_format(2, ",") }}
+			{{ (total/100)|number_format(2, ",", " ") }}
 		</b><br>
 		<a href="{{path('app_order')}}" class="btn btn-block btn-success mt-4">Valider mon panier</a>
 	</div>
